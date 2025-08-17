@@ -65,52 +65,6 @@ const PlaceOrder = () => {
     }
   },[token])
 
-
-
-//   const placeOrder = async(event) => {
-//   event.preventDefault();
-//   console.log("placeOrder function triggered");
-
-//   let orderItems = [];
-//   food_list.forEach((item) => {
-//     if (cartItems[item._id] > 0) {
-//       let itemInfo = { ...item, quantity: cartItems[item._id] }; // Safe copy
-//       orderItems.push(itemInfo);
-//     }
-//   });
-
-//   console.log("Order Items:", orderItems);
-
-//   let orderData = {
-//      userId: localStorage.getItem("userId"), // ye chatgpt se add kiya h
-
-//     address: data,
-//     items: orderItems,
-//     amount: getTotalCartAmount() + 2,
-//   };
-
-//   try {
-//     console.log("Sending order to:", url + "/api/order/place");
-//     let response = await axios.post(url + "/api/order/place", orderData, {
-//       headers: { token }
-//     });
-//     console.log("Backend response:", response.data);
-
-//     if (response.data.success) {
-//       const { session_url } = response.data;
-//       console.log("Redirecting to Stripe:", session_url);
-//       window.location.replace(session_url);  // or window.open(session_url, "_blank");
-//     } else {
-//       alert("Order failed");
-//     }
-//    } catch (error) {
-//     console.error("Error in placing order:", error);
-//    alert("Server error, please try again");
-//    }
-
- 
-// };
-
   return (
     <form onSubmit={placeOrder} className='place-order'>
       <div className="place-order-left">

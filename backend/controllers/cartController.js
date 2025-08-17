@@ -55,36 +55,5 @@ const getCart= async(req, res)=>{
 
 }
 
-// const getCart = async (req, res) => {
-//   try {
-//     let userData = await userModel.findById(req.body.userId);
-//     if (!userData) {
-//       return res.status(404).json({ success: false, message: "User not found" });
-//     }
-//     res.json({ success: true, cartData: userData.cartData });
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ success: false, message: "Error fetching cart data" });
-//   }
-// }
-
-// const getCart = async (req, res) => {
-//   try {
-//     let userData = await userModel.findById(req.body.userId);
-//     let cartData = userData.cartData;  // No need for await here since it's not a promise
-    
-//     res.json({ 
-//       success: true, 
-//       cartData 
-//     });
-    
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({ 
-//       success: false, 
-//       message: "Error fetching cart data" 
-//     });
-//   }
-// }
 
 export{addToCart, removeFromCart, getCart}
