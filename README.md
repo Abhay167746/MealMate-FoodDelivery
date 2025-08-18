@@ -31,7 +31,7 @@ Testing/Debugging: Postman
 
 ⚡ Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/MealMate.git
+git clone https://https://github.com/Abhay167746/MealMate-FoodDelivery/tree/main.git
 cd MealMate
 
 2️⃣ Install Dependencies
