@@ -29,10 +29,7 @@ Database: MongoDB (Mongoose ODM)
 Payments: Stripe API
 Testing/Debugging: Postman 
 
-⚡ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://https://github.com/Abhay167746/MealMate-FoodDelivery.git
-cd MealMate
+
 
 2️⃣ Install Dependencies
 
